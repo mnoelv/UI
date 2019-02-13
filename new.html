@@ -11,25 +11,32 @@ body {margin: 0px;}
     background: -moz-linear-gradient(skyblue, #FFFFFF); 
     background: linear-gradient(skyblue, #FFFFFF);
 	min-height: 600px;
-	width:40%; 
-	margin-left: 30%;
+	width:100%; 
+	margin-left: 0%;
 /*	border: 1px red solid;*/
 } 
 @media screen and (max-width: 850px){
 #pageTopint {	width:100%; margin-left: 0%;}
 }
+#links {margin-left: 38%;}
 #links a{color: white; margin-left: 20px;}
-#loginform{width: 54%; height: 90px; float: left; margin-left: 1%; z-index: -1; 
+#loginform{width: 22%; height: 300px; float: left; margin-left: 38%; z-index: -1;
 /*border: 1px red solid;*/
 }
 #loginform input {float: right;}
-@media screen and (min-width: 850px){
-#loginform {margin-right: 5%;}
+
+
+
+
+
+#loginform select {float: right;}
+@media screen and (max-width: 850px){
+#loginform {width: 98%; float: left; margin-left: 0%;}
 }
 #loginbtn{ 
 width:30%;
     text-decoration: none;	
-    margin-top: 3px;
+    margin-top: 10px;
 	font-size: 16px;
     text-align: center;
     border-radius: 4px;
@@ -42,7 +49,9 @@ width:30%;
 }
 #refresh2 {float: left; text-decoration: none; font-weight: bold;}
 #refresh2 {float: left; text-decoration: none; font-weight: bold;}
-#log {font-weight: bold; color: green;}
+#log {font-weight: bold; color: green; margin-left: 38%;}
+#copy {float: left;}
+#dat {float: right;}
 </style>
 <script>
 function _(x){
@@ -103,5 +112,7 @@ Password<input type="password" id="password" onfocus="emptyElement('loginstatus'
 <div id="loginstatus"></div> 
 </form>
 </div>
+<div id="copy">Copyright @ 2019</div>
+<div id="dat">Politico project</div>
 </body>
 </html>
