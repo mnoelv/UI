@@ -6,20 +6,27 @@
 <style>
 body {margin: 0px;}
 #pageTopint {
-	background: teal; 
+  background: teal; 
     background: -o-linear-gradient(skyblue, #FFFFFF); 
     background: -moz-linear-gradient(skyblue, #FFFFFF); 
     background: linear-gradient(skyblue, #FFFFFF);
-	min-height: 600px;
-	width:50%; 
-	margin-left: 25%
-/*	border: 1px red solid;*/
+  min-height: 600px;
+  width:100%; 
+  margin-left: 0%
+/*  border: 1px red solid;*/
 } 
 @media screen and (max-width: 850px){
-#pageTopint {	width:100%; margin-left: 0%;}
+#pageTopint {margin-left: 0%;}
 }
-#links a{color: white; margin-left: 20px;}
-#loginform{width: 50%; height: 90px; float: left; margin-left: 1%; z-index: -1; 
+#links {border-radius: 3px; float: left; margin-left: 18%;}
+@media screen and (max-width: 850px){
+#links {margin-left: 0%;}
+}
+#links a{color: white; margin-left: 20px; border: 1px green solid; border-radius: 3px; float: left; margin-top: 5px;}
+
+
+
+#loginform{width: 25%; height: 90px; float: left; margin-left: 30%; z-index: -1; 
 /*border: 1px red solid;*/
 }
 @media screen and (max-width: 850px){
@@ -42,7 +49,7 @@ width:30%;
 }
 #refresh2 {float: left; text-decoration: none; font-weight: bold;}
 #refresh2 {float: left; text-decoration: none; font-weight: bold;}
-#log {font-weight: bold; color: green;}
+#log {font-weight: bold; color: green; margin-left: 30%;}
 </style>
 <script>
 function _(x){

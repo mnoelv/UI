@@ -11,40 +11,48 @@ body {margin: 0px;}
     background: -moz-linear-gradient(skyblue, #FFFFFF); 
     background: linear-gradient(skyblue, #FFFFFF);
 	min-height: 600px;
-	width:50%; 
-	margin-left: 25%;
-/*	border: 1px red solid;*/
+	width:99.5%; 
+	margin-left: 00%;
+	/*border: 1px red solid;*/
 } 
 @media screen and (max-width: 850px){
 #pageTopint {	width:100%; margin-left: 0%;}
 }
-#links a{color: white; margin-left: 20px;}
-#pp{width: 67%; height: 45px; margin-left: 1%; z-index: -1; 
+#links { /*border: 1px red solid;*/ border-radius: 3px; float: left; margin-left: 18%;}
+@media screen and (max-width: 850px){
+#links {margin-left: 0%;}
+}
+#links a{color: white; margin-left: 20px; border: 1px green solid; border-radius: 3px; float: left; margin-top: 5px;}
+#pp{width: 50%; height: 60px; margin-left: 25%; z-index: -1; 
 /*border: 1px red solid;*/
 }
+
+
+
+
 #pp input {margin-left: 10px;}
-@media screen and (min-width: 850px){
-#pp {margin-right: 5%;}
+@media screen and (max-width: 850px){
+#pp {width: 98%; height: 60px; margin-left: 3px;}
 }
 
 
 #ppb{ 
-width:15%;
+width:40px;
     text-decoration: none;	
 	font-size: 16px;
     text-align: center;
     border-radius: 4px;
 	/*border: 1px red solid;*/
-
 }
 
 
 #pob{ 
-width:15%;
+width:40px;
     text-decoration: none;	
 	font-size: 16px;
     text-align: center;
-    border-radius: 4px;}
+    border-radius: 4px;
+}
 
 
 #status1 {
@@ -64,14 +72,27 @@ width:15%;
 }
 #refresh2 {float: left; text-decoration: none; font-weight: bold;}
 #refresh2 {float: left; text-decoration: none; font-weight: bold;}
-#log {font-weight: bold; color: green;}
+
+
+
+#log {font-weight: bold; color: green; margin-left: 32%;}
 #del {cursor: pointer; color: blue; margin-left: 20px;}
-#parties {width: 45%; float: left; border: 1px white solid;}
+#parties {width: 45%; float: left; border: 1px white solid; margin-left: 3%; margin-top: 20px;}
+
+@media screen and (max-width: 850px){
+#parties {width: 95%; margin-left: 0%;}
+}
 #parties a{margin-left: 36px;}
-#offices{width: 45%; float: left; border: 1px white solid; margin-left: 20px;}
+
+#offices{width: 45%; float: left; border: 1px white solid; margin-left: 20px; margin-top: 20px;}
+@media screen and (max-width: 850px){
+#offices {width: 95%; margin-top: 20px;  margin-left: 2px;}
+}
 #offices a{margin-left: 36px;}
 #titl {text-align: center; font-weight: bold; margin-bottom: 5px;}
 #titl2 {text-align: center; font-weight: bold; margin-bottom: 5px;}
+#copy {float: left;}
+#dat {float: right;}
 </style>
 <script>
 function _(x){
@@ -166,6 +187,7 @@ Add citizen id number<input type="text" id="ids" onfocus="emptyElement('status2'
 
 </div>
 
-
+<div id="copy">Copyright @ politico 2019</div>
+<div id="dat">Politico project</div>
 </body>
 </html>

@@ -11,33 +11,63 @@ body {margin: 0px;}
     background: -moz-linear-gradient(skyblue, #FFFFFF); 
     background: linear-gradient(skyblue, #FFFFFF);
 	min-height: 600px;
-	width:50%; 
-	margin-left: 25%
+	width:100%; 
+	margin-left: 0%
 /*	border: 1px red solid;*/
 } 
 @media screen and (max-width: 850px){
-#pageTopint {	width:100%; margin-left: 0%;}
+#pageTopint {margin-left: 0%;}
 }
-#links a{color: white; margin-left: 20px;}
+#links {border-radius: 3px; float: left; margin-left: 18%;}
+@media screen and (max-width: 850px){
+#links {margin-left: 0%;}
+}
+#links a{color: white; margin-left: 20px; border: 1px green solid; border-radius: 3px; float: left; margin-top: 5px;}
+
+
+
 #refresh2 {float: left; text-decoration: none; font-weight: bold;}
 #refresh2 {float: left; text-decoration: none; font-weight: bold;}
-#log {font-weight: bold; color: green;}
+#log {font-weight: bold; color: green; text-align: center; /*border: 1px green solid*/;
+
+}
 #del {cursor: pointer; color: blue; margin-left: 20px;}
 #parties {width: 45%; float: left; border: 1px white solid;}
+@media screen and (max-width: 850px){
+#parties {margin-top: 20px;}
+}
+
 #parties a{margin-left: 36px;}
 #offices{width: 45%; float: left; border: 1px white solid; margin-left: 20px;}
+@media screen and (max-width: 850px){
+#offices {margin-top: 20px;}
+}
+
 #offices a{margin-left: 36px;}
 #titl {text-align: center; font-weight: bold; margin-bottom: 5px;}
 #titl2 {text-align: center; font-weight: bold; margin-bottom: 5px;}
+
+
+
+
 #log {font-weight: bold; color: green;}
-#aplicationform{width: 60%; height: 90px; float: left; margin-left: 1%; z-index: -1; 
+#aplicationform{width: 99%; height: 200px; float: left; margin-left: 1%; z-index: -1; 
 /*border: 1px red solid;*/
 }
 #aplicationform input {float: left;}
+
+
 @media screen and (min-width: 850px){
 #aplicationform {margin-right: 5%;}
 }
-#titl2 {text-align: center; font-weight: bold; margin-bottom: 5px; float: left;}
+#titl2 {text-align: center; font-weight: bold; margin-bottom: 5px; float: left; margin-left: 43%; }
+
+
+@media screen and (max-width: 850px){
+#titl2 {margin-left: 0%;}
+}
+
+
 #loginbtn{ 
 width:30%;
     text-decoration: none;	
@@ -46,12 +76,17 @@ width:30%;
     text-align: center;
     border-radius: 4px;
 	float: left;
+	margin-left: 43%;
+	width: 90px;
 }
 #loginstatus {
 	color: red;
 	margin-top: 1px;
 	font-size: 14px;
+	text-align: center;
 }
+#copy {float: left;}
+#dat {float: right;}
 </style>
 <script>
 function _(x){
@@ -129,6 +164,7 @@ _("loginstatus").innerHTML = "Done";
 </form>
 </div>
 
-
+<div id="copy">Copyright @ politico 2019</div>
+<div id="dat">Politico project</div>
 </body>
 </html>

@@ -9,14 +9,18 @@ body {margin: 0px;}
     background: -moz-linear-gradient(skyblue, #FFFFFF); 
     background: linear-gradient(skyblue, #FFFFFF);
 	min-height: 600px;
-	width:50%; 
-	margin-left: 25%
+	width:100%; 
+	margin-left: 0%
 /*	border: 1px red solid;*/
 } 
 @media screen and (max-width: 850px){
-#pageTopint {	width:100%; margin-left: 0%;}
+#pageTopint {margin-left: 0%;}
 }
-#links a{color: white; margin-left: 20px;}
+#links {border-radius: 3px; float: left; margin-left: 18%;}
+@media screen and (max-width: 850px){
+#links {margin-left: 0%;}
+}
+#links a{color: white; margin-left: 20px; border: 1px green solid; border-radius: 3px; float: left; margin-top: 5px;}
 #refresh2 {float: left; text-decoration: none; font-weight: bold;}
 </style>
 </head>

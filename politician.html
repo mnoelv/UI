@@ -11,17 +11,29 @@ body {margin: 0px;}
     background: -moz-linear-gradient(skyblue, #FFFFFF); 
     background: linear-gradient(skyblue, #FFFFFF);
 	min-height: 600px;
-	width:50%; 
-	margin-left: 25%;
-/*	border: 1px red solid;*/
+	width:99.5%; 
+	margin-left: 00%;
+	/*border: 1px red solid;*/
 } 
 @media screen and (max-width: 850px){
 #pageTopint {	width:100%; margin-left: 0%;}
 }
-#links a{color: white; margin-left: 20px;}
-#aplicationform{width: 60%; height: 90px; float: left; margin-left: 1%; z-index: -1; 
+#links { /*border: 1px red solid;*/ border-radius: 3px; float: left; margin-left: 18%;}
+@media screen and (max-width: 850px){
+#links {margin-left: 0%;}
+}
+#links a{color: white; margin-left: 20px; border: 1px green solid; border-radius: 3px; float: left; margin-top: 5px;}
+
+#aplicationform{width: 25%; height: 60px; margin-left: 25%; z-index: -1; 
 /*border: 1px red solid;*/
 }
+
+@media screen and (max-width: 850px){
+#aplicationform {width: 98%; margin-left: 0%;}
+}
+
+
+
 #aplicationform input {float: left;}
 @media screen and (min-width: 850px){
 #aplicationform {margin-right: 5%;}
@@ -34,6 +46,7 @@ width:30%;
     text-align: center;
     border-radius: 4px;
 	float: right;
+	margin-right: 40px;
 }
 #loginstatus {
 	color: red;
@@ -42,8 +55,17 @@ width:30%;
 }
 #refresh2 {float: left; text-decoration: none; font-weight: bold;}
 #refresh2 {float: left; text-decoration: none; font-weight: bold;}
-#log {font-weight: bold; color: green;}
+#log {font-weight: bold; color: green; margin-left: 25%;}
+@media screen and (max-width: 850px){
+#log {margin-left: 0%; margin-top: 50px;}
+}
+
+
+
+
 #titl2 {text-align: center; font-weight: bold; margin-bottom: 5px; float: left;}
+#copy {float: left;}
+#dat {float: right;}
 </style>
 <script>
 function _(x){
@@ -107,5 +129,7 @@ _("loginstatus").innerHTML = "Done";
 <div id="loginstatus"></div> 
 </form>
 </div>
+<div id="copy">Copyright @ politico 2019</div>
+<div id="dat">Politico project</div>
 </body>
 </html>
